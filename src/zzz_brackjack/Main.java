@@ -51,7 +51,7 @@ public class Main {
 		System.out.println("相手の場：" + card.YouTotal);
 
 		//		相手のカードが18以上になるまでカードを引く
-		while (card.YouTotal < 18) {
+		while (card.YouTotal < 17) {
 			System.out.println("-------------------------------------------");
 			System.out.println("相手がカードを引く「キーボードから何か入力してください」");
 			String youTarn = scan.next();
