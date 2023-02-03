@@ -13,7 +13,10 @@ public class Sub {
 
 	//	コンストラクター 配列の作成
 	public void stert(int i) {
-		if(i%2==0) {
+		if (i < 5) {
+			System.out.println("5以上の奇数を入力してください");
+			System.exit(0);
+		} else if (i % 2 == 0) {
 			System.out.println("奇数を選択してください");
 			System.exit(0);
 		}
@@ -115,7 +118,7 @@ public class Sub {
 		Nextroad();
 	}
 
-//	分かれ道を作成（１００回ループさせて隙間をなくしている）
+	//	分かれ道を作成（１００回ループさせて隙間をなくしている）
 	private void Nextroad() {
 		do {
 			Random VectorRandom = new Random();
@@ -147,7 +150,7 @@ public class Sub {
 				break;
 			}
 			root++;
-		} while (root<100);
+		} while (root < 100);
 
 	}
 
